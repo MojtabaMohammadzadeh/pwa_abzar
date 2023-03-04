@@ -1,0 +1,91 @@
+name: pwa2_abzar_sanat
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+
+
+  get: ^4.6.5
+  get_storage: ^2.0.3
+  permission_handler: ^10.2.0
+  responsive_sizer: ^3.1.1
+
+  mask_text_input_formatter: ^2.4.0
+  pin_code_fields: ^7.4.0
+  flutter_timer_countdown: ^1.0.5
+  persistent_bottom_nav_bar_v2: ^4.2.6
+
+  carousel_slider: ^4.2.1
+  lazy_load_scrollview: ^1.3.0
+
+  cached_network_image: ^3.2.2
+  html: ^0.15.1
+  flutter_html: ^3.0.0-alpha.6
+  http: ^0.13.5
+  image_picker: ^0.8.6+1
+  internet_connection_checker: ^1.0.0+1
+  double_back_to_close_app: ^2.1.0
+
+  uni_links: ^0.5.1
+
+  url_launcher: ^6.1.9
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/img/
+    - assets/intro_slider/
+    - assets/fonts/
+
+
+  fonts:
+    - family: Dana
+      fonts:
+        - asset: assets/fonts/Dana-Regular.ttf
+        - asset: assets/fonts/Dana-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/Dana-Black.ttf
+          weight: 700
+        - asset: assets/fonts/Dana-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Dana-Light.ttf
+          weight: 300
+
+
+    - family: DanaFaNum
+      fonts:
+        - asset: assets/fonts/DanaFaNum-Regular.ttf
+        - asset: assets/fonts/DanaFaNum-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/DanaFaNum-Black.ttf
+          weight: 700
+        - asset: assets/fonts/DanaFaNum-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/DanaFaNum-Light.ttf
+          weight: 200
