@@ -59,6 +59,7 @@ class TabBarControll extends GetxController{
     categorizedAllBrand.clear();
     categorizedMostViwe.clear();
     categorizedSliders.clear();
+    categorizeNewBrand.clear();
     // ***************All Brands*******************
     allBrand.forEach((element) {
       if(element.category_brand_id == Index+1){
@@ -71,6 +72,7 @@ class TabBarControll extends GetxController{
     controllNewBrand.forEach((element) {
       if(element.category_brand_id == Index+1){
         categorizeNewBrand.add(element); };
+      update();
     });
 
     // *****************Most Viwe********************
