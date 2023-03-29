@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:get_storage/get_storage.dart';
 
+import '../../../../core/constants.dart';
 import '../model/complete_shoping/Complete_shoping.dart';
 
 class CompleteShopingRemote{
@@ -23,7 +24,7 @@ class CompleteShopingRemote{
     var response = await http.post(url,
         body:
         {
-          'token':GetStorage().read('mytoken'),
+          'token':Token,
           'per_param': '10',
           'page_param': '1',
           'address_id' : addressId,

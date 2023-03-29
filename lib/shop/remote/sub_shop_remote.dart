@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:get_storage/get_storage.dart';
 
+import '../../core/constants.dart';
 import '../model/subpage_shop/sub_page_shop_model.dart';
 
 class SubShopRemote{
@@ -18,7 +19,7 @@ class SubShopRemote{
     var response = await http.post(url,
         body:
         {
-          'token':GetStorage().read('mytoken'),
+          'token':Token,
           'vip_category_id': id_category,
         });
     // Response response;

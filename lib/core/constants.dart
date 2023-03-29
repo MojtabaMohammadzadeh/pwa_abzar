@@ -15,7 +15,7 @@ const Color grayWhiteColor = Color(0xffF2F2F2);
 const Color goldColor = Color(0xffFB9E14);
 const Color redSecondaryColor = Color(0xffFF1100);
 
-
+const String Token = 'eyJpdiI6InMyZHAxV0wyMnl3UG9rVXNjZWJsSXc9PSIsInZhbHVlIjoiMmRTcVBSSEJ6OXp4ZndUb01LYXg2dz09IiwibWFjIjoiZGU3YzVkOTgwNGUyNGM4OWU5MjM3NzEwMjQwODM0MmEyZmRjOWYyMGY3OTRiZjQ2ZGI0MTc5YjdjOWM0ZjFkNyIsInRhZyI6IiJ9';
 
 
 

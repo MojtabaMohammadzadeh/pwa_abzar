@@ -5,6 +5,7 @@ import 'dart:convert' as convert;
 
 import 'package:get_storage/get_storage.dart';
 
+import '../../core/constants.dart';
 import '../model/single_places/single_place_model.dart';
 
 class SinglePlaceRemote{
@@ -16,7 +17,7 @@ class SinglePlaceRemote{
     var response = await http.post(url,
         body:
         {
-          'token': GetStorage().read('mytoken'),
+          'token': Token,
           'page_param': '1',
           'per_param': '10',
            'id_place': id_value

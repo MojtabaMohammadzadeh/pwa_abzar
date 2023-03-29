@@ -9,6 +9,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:get_storage/get_storage.dart';
 
+import '../../core/constants.dart';
 import '../model/search_model/Search_model.dart';
 
 class SearchRemote{
@@ -20,7 +21,7 @@ class SearchRemote{
         body:
         {
 
-          'token':GetStorage().read('mytoken'),
+          'token':Token,
           'value': Value,
           'search_type': searchType,
           'per_param': 10,

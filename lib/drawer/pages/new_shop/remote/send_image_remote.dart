@@ -11,6 +11,7 @@ import 'package:get_storage/get_storage.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
+import '../../../../core/constants.dart';
 import '../model/slider_model/slider_model.dart';
 
 class SendImageRemote{
@@ -27,7 +28,7 @@ class SendImageRemote{
     var length = await file.length();
     var url = Uri.http('sanatabzar128.ir', 'v2/uploadsliderplace');
     http.MultipartRequest request = new http.MultipartRequest("POST", url);
-    request.fields["token"] = GetStorage().read('mytoken');
+    request.fields["token"] = Token;
     var multipartFile = new http.MultipartFile('image_file', stream, length, filename: basename(file.path));
     request.files.add(multipartFile);
     final streamedResponse = await request.send();

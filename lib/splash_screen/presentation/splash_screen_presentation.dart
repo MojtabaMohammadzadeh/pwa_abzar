@@ -70,8 +70,8 @@ class OnBoard extends StatelessWidget {
     AuthenticationManager _authManager = Get.find();
 
     return _authManager.isConnected ? Obx(() {
-      return _authManager.isLogged.value ? MainNavPage() : PhoneEntry();
-      // return _authManager.isLogged.value ? MainNavPage() : MainNavPage();
+      return _authManager.isLogged.value ? MainNavPage() : MainNavPage();
+
 
     }): NoConnection();
   }

@@ -7,6 +7,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:get_storage/get_storage.dart';
 
+import '../../core/constants.dart';
 import '../model/single_product_shop/Single_shop_products.dart';
 
 class SingleProShopRemote{
@@ -18,7 +19,7 @@ class SingleProShopRemote{
     var response = await http.post(url,
         body:
         {
-          'token':GetStorage().read('mytoken'),
+          'token':Token,
           'vip_product_id': productId,
         });
     // Response response;

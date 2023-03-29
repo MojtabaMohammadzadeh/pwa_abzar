@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 import 'package:get_storage/get_storage.dart';
 
+import '../../../../core/constants.dart';
 import '../model/new_shop_list/New_shop_lists.dart';
 
 class ShopListsRemote{
@@ -16,7 +17,7 @@ class ShopListsRemote{
         body:
         {
 
-          'token':GetStorage().read('mytoken'),
+          'token':Token,
           'device_id': '2cd05a4743776040',
           'page_param': '1',
           'per_param' : '10',
